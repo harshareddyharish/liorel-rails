@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    users = User.includes(:user_tags).all
+    users = User.includes(:user_tags).where.not(id: @user.id)
     render json: users, each_serializer: UsersSerializer, adapter: :json, root: 'users'
   end
 
