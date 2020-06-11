@@ -1,0 +1,1 @@
+User.create(first_name: 'Admin', last_name: 'User', email: 'admin@liorel.com', password: 'admin123')
