@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Clone the project
+1) git clone git@github.com:harshareddyharish/liorel-rails.git
 
-Things you may want to cover:
+# Goto Project repo
+2) cd liorel-rails
 
-* Ruby version
+# Install the gems
+3) bundle install
 
-* System dependencies
+# Run the migrations 
+4) rails db:migrate (or) rake db:migrate
 
-* Configuration
+# Run the seed file to create the default user account
+5) rails db:seed (or) rake db:seed
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Start the server
+6) rails s
